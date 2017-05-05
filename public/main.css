@@ -1,0 +1,185 @@
+body {
+  background-color: #f5f3ee;
+}
+
+a {
+  text-decoration: none;
+}
+
+.app {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 90vh;
+  justify-content: center;
+}
+
+.questionIntro {
+  display: flex;
+  text-align: center;
+}
+
+.gameView {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 2em;
+}
+
+.gameView > h2 {
+  margin: 0.5em 0.5em;
+}
+
+.gameView > a {
+  text-decoration: none;
+}
+
+.homeLink {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.questionOne, .questionTwo {
+  width: 90vw;
+  height: 12vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0.5em;
+  border-radius: 20px;
+}
+
+.questionOne {
+  background-color: tomato;
+}
+
+.questionTwo {
+  background-color: #31849F;
+}
+
+.questionOne > p, .questionTwo > p {
+  margin: 1em;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.afterQuestions {
+  text-align: center;
+  padding-bottom: 2em;
+}
+
+.footer {
+  display: flex;
+  width: 100%;
+  position: fixed;
+  bottom: 1em;
+  justify-content: space-between;
+}
+
+.ranking, .reset, .homeLink {
+  background-color: rgba(0,0,0,.5);
+  padding: 0.5em;
+  border-radius: 15px;
+  color: #FFFFFF;
+}
+
+.ranking {
+  margin-left: 3em;
+}
+
+.reset {
+  text-align: right;
+  margin-right: 3em;
+}
+
+
+/* Welcome page*/
+.twelve {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /*background-color: #DDE0D9;*/
+  border: solid 2px black;
+  padding: 2em 0;
+  border-radius: 20px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+}
+
+.form > input {
+  margin: 0;
+}
+
+.twelve > p {
+  font-size: 2em;
+  text-align: center;
+}
+
+form > label {
+  font-size: 1.3em;
+}
+
+/*ranking*/
+.rankingTable {
+  position: absolute;
+  top: 5em;
+  padding: 0 2em;
+}
+
+.row {
+  display: flex;
+}
+
+.percentage {
+  margin-right: 0.5em;
+}
+
+.table-title {
+  font-weight: bold;
+  background-color: rgba(134, 137, 150, 0.3);
+  font-family: sans-serif;
+}
+
+.table-title > td {
+  padding: 0 3em;
+  line-height: 120%;
+}
+
+td {
+  padding: 0;
+  text-align: center;
+  height: 10vh;
+}
+
+.homeLink {
+  position: absolute;
+  top: 1em;
+  left: 1em;
+}
+
+@media (min-width: 500px) {
+  .gameView {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .questionOne, .questionTwo {
+    width: 30vw;
+  }
+
+  .questionIntro {
+    margin-bottom: 5em;
+  }
+
+  .app {
+    height: 75vh;
+    margin: 5em 0;
+  }
+}
